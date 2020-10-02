@@ -1,14 +1,21 @@
 import React from 'react'
 import {render} from 'react-dom'
 import './style.css'
-import './babel'
 
-
-console.log("hello!");
+import AddSearchBlock from './components/AddSearchBlock.jsx'
+import TableBlock from './components/TableBlock.jsx'
+import InfoElementBlock from './components/InfoElementBlock.jsx'
+import AddItemBlock from './components/AddItemBlock.jsx'
 
 const App = () => (
     <div className="container">
-        <h1>userDataApp</h1>
+        <div className="wrapper">
+            <h1>User-Data App</h1>
+            <AddSearchBlock/>
+            <TableBlock/>
+            <InfoElementBlock/>
+            <AddItemBlock/>
+        </div>
     </div> 
 ) 
 
